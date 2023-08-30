@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <script src="./js/main.js"></script>
+  <title>Play&Sing</title>
+</head>
+<body>
+    <header>
+        <a id="logo" onclick="mostrarMensajeInicial()">
+          <img src="./img/logo.png" title="Logo app">
+          <h2 id="titulonav">&nbsp;&nbsp;Play&Sing</h2>
+        </a>
+        <nav>
+          <ul>
+            <li><a href="#rankings" onclick="makeLinksSmooth()">Rankings</a></li>
+            <li><a href="#artistas" onclick="makeLinksSmooth()">Artistas</a></li>
+            <li><a href="#eventos" onclick="makeLinksSmooth()">Eventos Proximos</a></li>
+            <li><a href="#contacto" onclick="makeLinksSmooth()">Contacto</a></li>
+          </ul>
+        </nav>
+    
+      </header>
+      <main>
+<!-- HOME BANNER -->
+        <section id="home">
+   
+         <div class="home-banner">
+           <h1>Bienvenidos</h1>
+              <h3>Play&Sing</h3>
+              <p>La mejor página web para conocer más acerca de la música del momento</p>
+         </div>
+       </section>
+<!-- SECCION ARTISTAS -->
+       <section id="rankings">
+         <h1>Rankings</h1>
+         <h3>Proximamente...</h3>
+         <p>
+          ---
+         </p>
+       </section>
+<!-- SECCION ARTISTAS -->
+       <section id="artistas">
+         <h1>Artistas Destacados</h1>
+         <h3>Proximamente...</h3>
+         <div class="carousel-container">
+            <div class="carousel">
+              <img class="slide" src="./img/taylor.webp" alt="Imagen 1">
+              <img class="slide" src="./img/ariana.jpg" alt="Imagen 2">
+            </div>
+            <button class="prev-btn">&#10094;</button>
+            <button class="next-btn">&#10095;</button>
+          </div>
+          <script src="./js/carousel.js"></script>
+       </section>
+<!-- SECCION EVENTOS -->
+       <section id="eventos">
+         <h1>Proximos Eventos</h1>
+         <h3>Proximamente...</h3>
+         <p>
+          ---
+         </p>
+       </section>
+<!-- SECCION CONTACTO -->
+       <section id="contacto">
+        <h1>Formulario de contacto</h1>
+        <h3>Proximamente...</h3>
+        <p>
+         ---
+        </p>
+       </section>
+   
+     </main>
+<!-- FOOTER -->
+     <footer id="footer">
+       <h3>Contactos adicionales | Redes sociales</h3>
+       <p>Play&Sing &copy; 2023</p>
+     </footer>
+   
+     <button id="btn-ir-arriba" >
+       <svg viewBox="0 0 24 24">
+         <path d="m4 16 8-8 8 8"></path>
+       </svg>
+     </button>
+   
+</body>
+</html>

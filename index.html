@@ -37,32 +37,146 @@
 <!-- SECCION ARTISTAS -->
        <section id="rankings">
          <h1>Rankings</h1>
-         <h3>Proximamente...</h3>
-         <p>
-          ---
-         </p>
+          <table id="tbrank">
+            <tr>
+                <th style="border-start-start-radius: 8px; border-bottom-left-radius: 8px;"></th>
+                <th>Posición</th>
+                <th>Canción</th>
+                <th>Artista</th>
+                <th style="border-end-end-radius: 8px;border-top-right-radius: 8px;">Puntuación</th>
+            </tr>
+            <tr>
+                <td><img src="./img/cruel summer.avif" alt="cruel_summer"></td>
+                <td>1</td>
+                <td>Cruel Summer</td>
+                <td>Taylor Swift</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td><img src="./img/speak now.jfif" alt=""></td>
+                <td>2</td>
+                <td>Speak Now</td>
+                <td>Taylor Swift</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td><img src="./img/Midnights.png" alt=""></td>
+                <td>3</td>
+                <td>Anti hero</td>
+                <td>Taylor Swift</td>
+                <td>10</td>
+            </tr>
+            <!-- Agrega más filas según sea necesario -->
+        </table>
        </section>
 <!-- SECCION ARTISTAS -->
        <section id="artistas">
          <h1>Artistas Destacados</h1>
-         <h3>Proximamente...</h3>
-         <div class="carousel-container">
-            <div class="carousel">
-              <img class="slide" src="./img/taylor.webp" alt="Imagen 1">
-              <img class="slide" src="./img/ariana.jpg" alt="Imagen 2">
-            </div>
-            <button class="prev-btn">&#10094;</button>
-            <button class="next-btn">&#10095;</button>
-          </div>
-          <script src="./js/carousel.js"></script>
-       </section>
+        <table id="adestacados">
+          <tr>
+            <td>
+              <p style="font-size: 20px;">
+                <img src="./img/taylor_ad.jpg" alt="ts" align="left">&nbsp;&nbsp;<strong>Taylor Swift</strong>
+              </p>
+              <p>
+                  &nbsp;&nbsp;<u>Último Album</u>: Midnights <br>
+                  &nbsp;&nbsp;<u>Canción más popular</u>: Cruel Summer <br>
+                  &nbsp;&nbsp;<u>Último Evento</u>: 2023 <br>
+                  &nbsp;&nbsp;<u>Último Premio</u>: Grammy 2022 <br>
+                  &nbsp;&nbsp;<u>Último concierto</u>: The Eras Tour
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p style="font-size: 20px; text-align: left;">
+                <img src="./img/ari_ad.jfif" alt="ag" align="left">&nbsp;&nbsp;<strong>Ariana Grande</strong>
+              </p>
+              <p style="text-align: left; direction: ltl;">
+                &nbsp;&nbsp;<u>Último Album</u>: Positions <br>
+                &nbsp;&nbsp;<u>Canción más popular</u>: 7 rings <br>
+                &nbsp;&nbsp;<u>Último Evento</u>: 2019 <br>
+                &nbsp;&nbsp;<u>Último Premio</u>: Grammy 2021 <br>
+                &nbsp;&nbsp;<u>Último concierto</u>: Sweetener World Tour
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p style="font-size: 20px;">
+                <img src="./img/beyonce_ad.jpg" alt="b" align="left">&nbsp;&nbsp;<strong>Beyoncé</strong>
+              </p>
+              <p>
+                &nbsp;&nbsp;<u>Último Album</u>: Renaissance <br>
+                &nbsp;&nbsp;<u>Canción más popular</u>: CUFF IT <br>
+                &nbsp;&nbsp;<u>Último Evento</u>: 2023 <br>
+                &nbsp;&nbsp;<u>Último Premio</u>: Grammy 2022 <br>
+                &nbsp;&nbsp;<u>Último concierto</u>: Renaissance World Tour
+            </p>
+            </td>
+          </tr>
+        </table>
+      </section>
 <!-- SECCION EVENTOS -->
        <section id="eventos">
-         <h1>Proximos Eventos</h1>
-         <h3>Proximamente...</h3>
-         <p>
-          ---
-         </p>
+        <h1>Proximos Eventos</h1>
+        <div class="evento-mensaje">
+          <div class="comentario">
+            <div class="evento">
+              <img src="./img/circle-calendar.png" alt="evento">
+            </div>
+            <div class="evento-mensaje">
+              <p><strong>Taylor Swift</strong></p>
+              <p>The Eras Tour. ¡El tour de los tours!</p>
+              <p>Fecha: 2023</p>
+            </div>
+          </div>
+        </div>
+        <div class="evento-mensaje">
+          <div class="comentario">
+            <div class="evento">
+              <img src="./img/circle-calendar.png" alt="evento">
+            </div>
+            <div class="evento-mensaje">
+              <p><strong>Beyoncé</strong></p>
+              <p>Renaissance World Tour. Es la novena gira musical de la cantante estadounidense Beyoncé en apoyo de su séptimo álbum de estudio</p>
+              <p>Fecha: 2023</p>
+            </div>
+          </div>
+        </div>
+        <div class="evento-mensaje">
+          <div class="comentario">
+            <div class="evento">
+              <img src="./img/circle-calendar.png" alt="evento">
+            </div>
+            <div class="evento-mensaje">
+              <p><strong>Melanie Martinez</strong></p>
+              <p>Portals Tour. ¡Proximamente Melanie Martinez vendrá mejor que nunca con su nuevo Tour!</p>
+              <p>Fecha: 2023</p>
+            </div>
+          </div>
+        </div>
+        <div class="evento-mensaje">
+          <div class="comentario">
+            <div class="evento">
+              <img src="./img/circle-calendar.png" alt="evento">
+            </div>
+            <div class="evento-mensaje">
+              <p><strong>Lana del Rey</strong></p>
+              <p>Lana del Rey Live. ¡Pronto Lana vendrá a tocar muchos de sus éxitos a México!</p>
+              <p>Fecha: 2023</p>
+            </div>
+          </div>
+        </div>
+         <!-- <div class="carousel-container">
+          <div class="carousel">
+            <img class="slide" src="./img/taylor.webp" alt="Imagen 1">
+            <img class="slide" src="./img/ariana.jpg" alt="Imagen 2">
+          </div>
+          <button class="prev-btn">&#10094;</button>
+          <button class="next-btn">&#10095;</button>
+        </div>
+        <script src="./js/carousel.js"></script> -->
        </section>
 <!-- SECCION CONTACTO -->
        <section id="contacto">

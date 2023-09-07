@@ -2,7 +2,7 @@
 #PALETA_DE_COLORES {
     color: #222831 #393E46 #CD1818 #EEEEEE #181654;
   }
-  
+/* #GENERAL */
   * {
     box-sizing: border-box;
     margin: 0;
@@ -23,6 +23,7 @@
     font-weight: 600;
     align-items: center;
     color: #EEEEEE;}
+/* #endGENERAL */
   
   /* #region HEADER */
   
@@ -96,7 +97,7 @@
   
   /* Divisor de secciones */
   section {
-    height: 100vh;
+    height: 120vh;
     border: 1px dashed hsl(0, 54%, 48%);;
   }
   
@@ -146,7 +147,73 @@
   }
   
   /* #endregion */
+
+/* #region TABLA RANKINGS */
+  #tbrank {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-family: 'Raleway', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: #EEEEEE;
+    color: #000000;
+  }
+  #tbrank th{
+    background-color: #393E46;
+    color: #EEEEEE;
+    padding: 10px 20px;
+    text-align: center;
+  }
+  #tbrank td{
+    padding: 10px;
+    text-align: center;
+  }
+
+  #tbrank img{
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+  }
+
+  #adestacados {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-family: 'Raleway', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: #EEEEEE;
+    color: #000000;
+  }
+
+  #adestacados td{
+    padding: 0px;
+    padding-left: 0%;
+  }
+
+  #adestacados img{
+    width: 250px;
+    height: 200px;
+    margin: 0 auto;
+    padding: 10px;
+    object-fit: cover;
+    flex-grow: 1;
+  }
   
+  #adestacados h2{
+    text-align: center;
+    align-content: top;
+  }
+
+  #adestacados p{
+    text-align: justify;
+  }
+
+/* #ENDREGION */
+
   /* #region carousel */
 
   .carousel-container {
@@ -197,6 +264,36 @@
   }
   
     /* #endregion */
+
+    /* eventos */
+    .evento-mensaje {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    
+    .comentario {
+      display: flex;
+      gap: 10px;
+      padding: 15px;
+      color: #EEEEEE;
+      background-color: hsla(216, 19%, 16%, 0.733);
+      border-radius: 8px;
+    }
+    
+    .evento img {
+      width: 40px;
+      border-radius: 50%;
+    }
+    
+    .evento-mensaje {
+      flex: 1;
+      padding-left: 30px;
+      margin-bottom: 0.75rem;
+    }
+    
+    /* endregion */
   
     /* #region BOTON IR ARRIBA */
     

@@ -4,24 +4,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="./css/style.css">
   <script src="./js/main.js"></script>
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+
   <title>Play&Sing</title>
 </head>
 <body>
     <header>
+      <div style="display: flex;">
         <a id="logo" onclick="mostrarMensajeInicial()">
           <img src="./img/logo.png" title="Logo app">
           <h2 id="titulonav">&nbsp;&nbsp;Play&Sing</h2>
         </a>
-        <nav>
-          <ul>
-            <li><a href="#rankings" onclick="makeLinksSmooth()">Rankings</a></li>
-            <li><a href="#artistas" onclick="makeLinksSmooth()">Artistas</a></li>
-            <li><a href="#eventos" onclick="makeLinksSmooth()">Eventos Proximos</a></li>
-            <li><a href="#contacto" onclick="makeLinksSmooth()">Contacto</a></li>
-          </ul>
-        </nav>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#rankings" onclick="makeLinksSmooth()">Rankings</a></li>
+          <li><a href="#artistas" onclick="makeLinksSmooth()">Artistas</a></li>
+          <li><a href="#eventos" onclick="makeLinksSmooth()">Eventos Proximos</a></li>
+          <li><a href="#contacto" onclick="makeLinksSmooth()">Contacto</a></li>
+        </ul>
+      </nav>
     
       </header>
       <main>
@@ -66,61 +69,55 @@
                 <td>Taylor Swift</td>
                 <td>10</td>
             </tr>
-            <!-- Agrega más filas según sea necesario -->
         </table>
        </section>
 <!-- SECCION ARTISTAS -->
        <section id="artistas">
          <h1>Artistas Destacados</h1>
-        <table id="adestacados">
-          <tr>
-            <td>
-              <p style="font-size: 20px;">
-                <img src="./img/taylor_ad.jpg" alt="ts" align="left">&nbsp;&nbsp;<strong>Taylor Swift</strong>
-              </p>
-              <p>
-                  &nbsp;&nbsp;<u>Último Album</u>: Midnights <br>
-                  &nbsp;&nbsp;<u>Canción más popular</u>: Cruel Summer <br>
-                  &nbsp;&nbsp;<u>Último Evento</u>: 2023 <br>
-                  &nbsp;&nbsp;<u>Último Premio</u>: Grammy 2022 <br>
-                  &nbsp;&nbsp;<u>Último concierto</u>: The Eras Tour
-              </p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p style="font-size: 20px; text-align: left;">
-                <img src="./img/ari_ad.jfif" alt="ag" align="left">&nbsp;&nbsp;<strong>Ariana Grande</strong>
-              </p>
-              <p style="text-align: left; direction: ltl;">
-                &nbsp;&nbsp;<u>Último Album</u>: Positions <br>
-                &nbsp;&nbsp;<u>Canción más popular</u>: 7 rings <br>
-                &nbsp;&nbsp;<u>Último Evento</u>: 2019 <br>
-                &nbsp;&nbsp;<u>Último Premio</u>: Grammy 2021 <br>
-                &nbsp;&nbsp;<u>Último concierto</u>: Sweetener World Tour
-              </p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p style="font-size: 20px;">
-                <img src="./img/beyonce_ad.jpg" alt="b" align="left">&nbsp;&nbsp;<strong>Beyoncé</strong>
-              </p>
-              <p>
-                &nbsp;&nbsp;<u>Último Album</u>: Renaissance <br>
-                &nbsp;&nbsp;<u>Canción más popular</u>: CUFF IT <br>
-                &nbsp;&nbsp;<u>Último Evento</u>: 2023 <br>
-                &nbsp;&nbsp;<u>Último Premio</u>: Grammy 2022 <br>
-                &nbsp;&nbsp;<u>Último concierto</u>: Renaissance World Tour
-            </p>
-            </td>
-          </tr>
-        </table>
+         <div class="artista-destacado">
+           <div class="img-artista">
+             <img src="./img/taylor_ad.jpg" alt="ts" />
+           </div>
+           <div class="info-artista">
+             <p><strong>Taylor Swift</strong></p>
+             <p>Último Album: Midnights</p>
+             <p>Canción más popular: Cruel Summer</p>
+             <p>Último Evento: 2023</p>
+             <p>Último Premio: Grammy 2022</p>
+             <p>Último concierto: The Eras Tour</p>
+           </div>
+         </div>
+         <div class="artista-destacado">
+           <div class="img-artista">
+             <img src="./img/ari_ad.jfif" alt="ag" />
+           </div>
+           <div class="info-artista">
+             <p><strong>Ariana Grande</strong></p>
+             <p>Último Album: Positions</p>
+             <p>Canción más popular: 7 rings</p>
+             <p>Último Evento: 2019</p>
+             <p>Último Premio: Grammy 2021</p>
+             <p>Último concierto: Sweetener World Tour</p>
+           </div>
+         </div>
+         <div class="artista-destacado">
+           <div class="img-artista">
+             <img src="./img/beyonce_ad.jpg" alt="b" />
+           </div>
+           <div class="info-artista">
+             <p><strong>Beyoncé</strong></p>
+             <p>Último Album: Renaissance</p>
+             <p>Canción más popular: CUFF IT</p>
+             <p>Último Evento: 2023</p>
+             <p>Último Premio: Grammy 2022</p>
+             <p>Último concierto: Renaissance World Tour</p>
+           </div>
+         </div>
       </section>
 <!-- SECCION EVENTOS -->
        <section id="eventos">
         <h1>Proximos Eventos</h1>
-        <div class="evento-mensaje">
+        <div class="evento-prox">
           <div class="comentario">
             <div class="evento">
               <img src="./img/circle-calendar.png" alt="evento">
@@ -132,7 +129,7 @@
             </div>
           </div>
         </div>
-        <div class="evento-mensaje">
+        <div class="evento-prox">
           <div class="comentario">
             <div class="evento">
               <img src="./img/circle-calendar.png" alt="evento">
@@ -144,7 +141,7 @@
             </div>
           </div>
         </div>
-        <div class="evento-mensaje">
+        <div class="evento-prox">
           <div class="comentario">
             <div class="evento">
               <img src="./img/circle-calendar.png" alt="evento">
@@ -156,7 +153,7 @@
             </div>
           </div>
         </div>
-        <div class="evento-mensaje">
+        <div class="evento-prox">
           <div class="comentario">
             <div class="evento">
               <img src="./img/circle-calendar.png" alt="evento">
@@ -168,30 +165,61 @@
             </div>
           </div>
         </div>
-         <!-- <div class="carousel-container">
-          <div class="carousel">
-            <img class="slide" src="./img/taylor.webp" alt="Imagen 1">
-            <img class="slide" src="./img/ariana.jpg" alt="Imagen 2">
-          </div>
-          <button class="prev-btn">&#10094;</button>
-          <button class="next-btn">&#10095;</button>
-        </div>
-        <script src="./js/carousel.js"></script> -->
        </section>
 <!-- SECCION CONTACTO -->
-       <section id="contacto">
-        <h1>Formulario de contacto</h1>
-        <h3>Proximamente...</h3>
-        <p>
-         ---
-        </p>
+       <section class="contactox" id="contacto">
+        <h1>Contacto</h1>
+        <div class="container-form">
+          <form action="" method="">
+            <div class="form-group">
+              <label for="nombre">Nombre</label>
+              <input type="text" class="form-control" id="nombre" name="nombre">
+            </div>
+            <div class="form-group">
+              <label for="correo">Correo electrónico</label>
+              <input type="email" class="form-control" id="correo" name="correo">
+            </div>
+            <div class="form-group">
+              <label for="asunto">Asunto</label>
+              <input type="text" class="form-control" id="asunto" name="asunto">
+            </div>
+            <div class="form-group">
+              <label for="mensaje">Mensaje</label>
+              <textarea class="form-control msj" id="mensaje" name="mensaje"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary custom">Enviar</button>
+          </form>
+        </div>
        </section>
    
      </main>
 <!-- FOOTER -->
      <footer id="footer">
-       <h3>Contactos adicionales | Redes sociales</h3>
-       <p>Play&Sing &copy; 2023</p>
+       <div class="redes-sociales">
+        <ul>
+          <li>
+            <a href="#">
+              <img src="./img/facebook.png" alt="Facebook">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./img/twitter.png" alt="Twitter">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./img/instagram.png" alt="Instagram">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./img/youtube.png" alt="Youtube">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <p>Play&Sing &copy; 2023</p>
      </footer>
    
      <button id="btn-ir-arriba" >

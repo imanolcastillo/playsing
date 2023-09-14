@@ -40,7 +40,7 @@
   
     position: fixed;
     width: 100%;
-    height: 90px;
+    height: auto;
     box-shadow: 0 6px 8px rgba(0,0,0, 0.10);
   
     z-index: 1;
@@ -100,6 +100,7 @@
   /* Divisor de secciones */
   section {
     height:auto;
+    width: 100%;
     border: 1px dashed hsl(0, 54%, 48%);;
   }
   
@@ -218,57 +219,6 @@
 }
 
 /* #ENDREGION */
-
-  /* #region carousel */
-
-  .carousel-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    width: 600px;
-    height: 400px;
-    cursor: pointer;
-    position: relative;
-  }
-  
-  .carousel {
-    display: flex;
-    flex-grow: 1;
-    overflow: hidden;
-  }
-  
-  .slide {
-    max-width: 100%;
-    display: none;
-  }
-  
-  div img {
-    width: 100%;
-    flex-grow: 1;
-    object-fit: cover;
-  }
-  
-  .prev-btn, .next-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 20px;
-    background-color: transparent;
-    border: none;
-    color: #333;
-    cursor: pointer;
-  }
-  
-  .prev-btn {
-    left: 20px;
-  }
-  
-  .next-btn {
-    right: 20px;
-  }
-  
-    /* #endregion */
 
     /* eventos */
     .evento-prox {
@@ -443,16 +393,33 @@
   
 
 
-  @media (max-width: 80%) {
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      padding-right: 0;
+      width: 100%;
+    }
     table {
       width: 100%;
     }
+    nav {
+      width: 100%;
+      display: none;
+      flex-direction: column;
+      padding: 0;
+    }
+    nav ul {
+      flex-direction: column;
+      padding: 0;
+    }
+    section {
+      width: 100%;
+      padding: 1rem;
+    }
+
   }
 
   @media (max-width: 768px) {
-    nav {
-      flex-direction: column;
-    }
     #titulonav {
       display: none;
     }
